@@ -53,10 +53,9 @@ public class GUI {
 		
 		frame.open();
 		
-		
 		// Attempt to read Google Scholar URLs from text file. If unable to, inform the user.
 		try {
-			professors = Report.readProfessorsFromFile();
+			professors = FileManager.readProfessorsFromFile();
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(null, "Unable to find urls.txt", "Error", JOptionPane.ERROR_MESSAGE);
 			System.exit(0);
@@ -105,7 +104,7 @@ public class GUI {
 
 		list.removeAll();
 		for (Professor p : professors) {
-			list.add(p.getName());
+			list.add(p.getFullName());
 		}		
 		
 		frame.layout();
@@ -115,6 +114,7 @@ public class GUI {
 				display.sleep();
 			}
 		}
+		
 	}
 
 	/**

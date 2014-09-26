@@ -1,30 +1,37 @@
-http://scholar.google.com/citations?user=PFa8F_oAAAAJ
-http://scholar.google.com/citations?user=IwDCodEAAAAJ
-http://scholar.google.com/citations?user=AN3f7iAAAAAJ
-http://scholar.google.com/citations?user=pPtLOX4AAAAJ
-http://scholar.google.com/citations?user=gSnisPkAAAAJ
-http://scholar.google.com/citations?user=cuA3CkgAAAAJ
-http://scholar.google.com/citations?user=_KCqeIEAAAAJ
-http://scholar.google.com/citations?user=Ej57xEgAAAAJ
-http://scholar.google.com/citations?user=C-wDOskAAAAJ
-http://scholar.google.com/citations?user=NgEPEgEAAAAJ
-http://scholar.google.com/citations?user=zr9OzAUAAAAJ
-http://scholar.google.com/citations?user=PYV9NvYAAAAJ
-http://scholar.google.com/citations?user=bRCoY7EAAAAJ
-http://scholar.google.com/citations?user=BXp6PIIAAAAJ
-http://scholar.google.com/citations?user=fs2LVqkAAAAJ
-http://scholar.google.com/citations?user=2H01tqsAAAAJ
-http://scholar.google.com/citations?user=s2Jfd_EAAAAJ
-http://scholar.google.com/citations?user=nIilxGUAAAAJ
-http://scholar.google.com/citations?user=M4Gtz_MAAAAJ
-http://scholar.google.com/citations?user=4EPE1s4AAAAJ
-http://scholar.google.com/citations?user=PmoXm6UAAAAJ
-http://scholar.google.com/citations?user=BWCXlIcAAAAJ
-http://scholar.google.com/citations?user=Wu2eCMUAAAAJ
-http://scholar.google.com/citations?user=O31K47YAAAAJ
-http://scholar.google.com/citations?user=F-xcn0MAAAAJ
-http://scholar.google.com/citations?user=OFfdxoQAAAAJ
-http://scholar.google.com/citations?user=NIChMFQAAAAJ
-http://scholar.google.com/citations?user=aqHhYcwAAAAJ
-http://scholar.google.com/citations?user=xDuEgX4AAAAJ
-http://scholar.google.com/citations?user=IwDCodEAAAAJ
+# Google Scholar Report Generator urls.txt File
+# Usage
+#	FirstName LastName GoogleScholarProfileURL
+# Example
+#	Ronald Miles http://scholar.google.com/citations?user=O31K47YAAAAJ
+#
+# *** START LIST BELOW ***
+
+Guy German http://scholar.google.com/citations?user=PFa8F_oAAAAJ
+Hiroki Sayama http://scholar.google.com/citations?user=IwDCodEAAAAJ
+Nael Abu-Ghazaleh http://scholar.google.com/citations?user=AN3f7iAAAAAJ
+Kanad Ghose http://scholar.google.com/citations?user=pPtLOX4AAAAJ
+Kartik Gopalan http://scholar.google.com/citations?user=gSnisPkAAAAJ
+Madhusudhan Govindaraju http://scholar.google.com/citations?user=cuA3CkgAAAAJ
+Yu-David Liu http://scholar.google.com/citations?user=_KCqeIEAAAAJ
+Yao Liu http://scholar.google.com/citations?user=Ej57xEgAAAAJ
+Weiyi Meng http://scholar.google.com/citations?user=C-wDOskAAAAJ
+Timothy Miller http://scholar.google.com/citations?user=NgEPEgEAAAAJ
+Dmitri Ponomarev http://scholar.google.com/citations?user=zr9OzAUAAAAJ
+Lijun Yin http://scholar.google.com/citations?user=PYV9NvYAAAAJ
+Lei Yu http://scholar.google.com/citations?user=bRCoY7EAAAAJ
+Ting Zhu http://scholar.google.com/citations?user=BXp6PIIAAAAJ
+Yu Chen http://scholar.google.com/citations?user=fs2LVqkAAAAJ
+Seokheun Choi http://scholar.google.com/citations?user=2H01tqsAAAAJ
+Scott Craver http://scholar.google.com/citations?user=s2Jfd_EAAAAJ
+Tara Dhakal http://scholar.google.com/citations?user=nIilxGUAAAAJ
+Mark Fowler http://scholar.google.com/citations?user=M4Gtz_MAAAAJ
+Zhanpeng Jin http://scholar.google.com/citations?user=4EPE1s4AAAAJ
+David Klotzkin http://scholar.google.com/citations?user=PmoXm6UAAAAJ
+Xiaohua Li http://scholar.google.com/citations?user=BWCXlIcAAAAJ
+Ning Zhou http://scholar.google.com/citations?user=Wu2eCMUAAAAJ
+Ron Miles http://scholar.google.com/citations?user=O31K47YAAAAJ
+Bahgat Sammakia http://scholar.google.com/citations?user=F-xcn0MAAAAJ
+Quang Su http://scholar.google.com/citations?user=OFfdxoQAAAAJ
+Mohammad Younis http://scholar.google.com/citations?user=NIChMFQAAAAJ
+Guangwen Zhou http://scholar.google.com/citations?user=aqHhYcwAAAAJ
+Chun-An Chou http://scholar.google.com/citations?user=xDuEgX4AAAAJ

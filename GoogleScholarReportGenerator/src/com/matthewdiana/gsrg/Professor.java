@@ -10,17 +10,28 @@ import org.jsoup.select.Elements;
 
 public class Professor implements Runnable {
 
-	private String name;
-	private String scholarURL;
+	private String firstName;
+	private String lastName;
+	private String fullName;
+	private String googleScholarName;
+	private String googleScholarURL;
 	private ArrayList<Publication> publications;
 	
 	public Professor(String scholarURL) {
-		this.scholarURL = scholarURL;
+		googleScholarURL = scholarURL;
+		publications = new ArrayList<>();
+	}
+	
+	public Professor(String firstName, String lastName, String scholarURL) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		fullName = firstName + " " + lastName;
+		googleScholarURL = scholarURL;
 		publications = new ArrayList<>();
 	}
 	
 	public void printPublications() {
-		System.out.println(name);
+		System.out.println(googleScholarName);
 		System.out.println("===");
 		for (Publication p : publications) {
 			System.out.println(p);
@@ -28,12 +39,16 @@ public class Professor implements Runnable {
 		}
 	}
 	
-	public String getName() {
-		return name;
+	public String getFullName() {
+		return fullName;
 	}
 	
-	public String getScholarURL() {
-		return scholarURL;
+	public String getGoogleScholarName() {
+		return googleScholarName;
+	}
+	
+	public String getGoogleScholarURL() {
+		return googleScholarURL;
 	}
 	
 	public ArrayList<Publication> getPublications() {
@@ -55,7 +70,7 @@ public class Professor implements Runnable {
 		while (hasNext) {
 			Document doc = null;
 			try {
-				doc = Jsoup.connect(scholarURL + "&pagesize=100&view_op=list_works&cstart=" + pageCounter).get();
+				doc = Jsoup.connect(googleScholarURL + "&pagesize=100&view_op=list_works&cstart=" + pageCounter).get();
 			} catch (IOException e1) {
 				System.out.println("Unable to connect to Google Scholar; check your internet connection.");
 				//System.exit(0);
@@ -64,7 +79,7 @@ public class Professor implements Runnable {
 			Elements next = doc.getElementsByClass("cit-dark-link");
 			
 			Element professorName = doc.select("div[id=gsc_prf_in]").first();
-			name = professorName.text();
+			googleScholarName = professorName.text();
 			
 			Elements titleCol = doc.select("a[class=gsc_a_at]");
 			Elements authorAndJournalCol = doc.select("div[class=gs_gray]");
