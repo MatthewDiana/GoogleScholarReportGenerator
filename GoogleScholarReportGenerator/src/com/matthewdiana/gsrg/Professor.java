@@ -13,6 +13,7 @@ public class Professor implements Runnable {
 	private String firstName;
 	private String lastName;
 	private String fullName;
+	private String department;
 	private String googleScholarName;
 	private String googleScholarURL;
 	private ArrayList<Publication> publications;
@@ -30,6 +31,15 @@ public class Professor implements Runnable {
 		publications = new ArrayList<>();
 	}
 	
+	public Professor(String firstName, String lastName, String department, String scholarURL) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		fullName = firstName + " " + lastName;
+		this.department = department;
+		googleScholarURL = scholarURL;
+		publications = new ArrayList<>();
+	}
+	
 	public void printPublications() {
 		System.out.println(googleScholarName);
 		System.out.println("===");
@@ -41,6 +51,10 @@ public class Professor implements Runnable {
 	
 	public String getFullName() {
 		return fullName;
+	}
+	
+	public String getDepartment() {
+		return department;
 	}
 	
 	public String getGoogleScholarName() {

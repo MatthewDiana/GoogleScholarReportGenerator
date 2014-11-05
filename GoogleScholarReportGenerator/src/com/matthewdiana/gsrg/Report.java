@@ -41,6 +41,7 @@ public class Report {
 		boolean journalCBSelected = checkboxes.get(2).getSelection();
 		boolean yearCBSelected = checkboxes.get(3).getSelection();
 		boolean citationCountCBSelected = checkboxes.get(4).getSelection();
+		boolean displayDepartmentCBSelected = checkboxes.get(5).getSelection();
 		
 		try {
 			fw = new FileWriter(outputFile);
@@ -49,12 +50,13 @@ public class Report {
 			fw.write("<body><font face=\"calibri\"><center>");
 			fw.write("<h1><b><u>Google Scholar Publication Report</u></b></h1>");
 			fw.write("<h3>Generated for Binghamton University - " + dateFormat.format(date) + " <br />Fetched " + publicationCount + " publications written by " + professorCount + " professors</h3>");
-			
+			fw.write("<hr width=\"50%\" />");
 			for (Professor prof : professors) {
 				
-				fw.write("<hr width=\"50%\" /> <br />");
+				fw.write("<br />");
 				
-				fw.write("<font size=\"16\"><b>" + prof.getFullName() + "</b></font>");
+				fw.write("<font size=\"7\"><b>" + prof.getFullName() + "</b></font>");
+				if (displayDepartmentCBSelected) fw.write("<br /><font size=\"5\">" + prof.getDepartment() + "</font>");
 				fw.write("<table class=\"sortable\" border=\"3\" width=\"95%\">");
 				
 				fw.write("<tr>");
@@ -116,6 +118,7 @@ public class Report {
 		boolean journalCBSelected = checkboxes.get(2).getSelection();
 		boolean yearCBSelected = checkboxes.get(3).getSelection();
 		boolean citationCountCBSelected = checkboxes.get(4).getSelection();
+		boolean displayDepartmentCBSelected = checkboxes.get(5).getSelection();
 		
 		try {
 			fw = new FileWriter(outputFile);
@@ -129,9 +132,10 @@ public class Report {
 
 			fw.write("<tr>");
 			fw.write("<th width=\"10%\">Professor</th>");
-			if (nameCBSelected) fw.write("<th width=\"30%\">Publication</th>");
+			if (displayDepartmentCBSelected) fw.write("<th width=\"10%\">Department</th>");
+			if (nameCBSelected) fw.write("<th width=\"25%\">Publication</th>");
 			if (authorsCBSelected) fw.write("<th width=\"20%\">Authors</th>");
-			if (journalCBSelected) fw.write("<th width=\"30%\">Journal</th>");
+			if (journalCBSelected) fw.write("<th width=\"25%\">Journal</th>");
 			if (yearCBSelected) fw.write("<th width=\"5%\">Year</th>");
 			if (citationCountCBSelected) fw.write("<th width=\"5%\">Cited By</th>");
 			fw.write("</tr>");
@@ -140,6 +144,7 @@ public class Report {
 				for (Publication pub : prof.getPublications()) {
 					fw.write("<tr>");
 					fw.write("<td>" + prof.getFullName() + "</td>");
+					if (displayDepartmentCBSelected) fw.write("<td>" + prof.getDepartment() + "</td>");
 					if (nameCBSelected) fw.write("<td><a href=\"" + pub.getScholarURL() + "\" target=\"_blank\">" + pub.getTitle() + "</a></td>");
 					if (authorsCBSelected) fw.write("<td>" + pub.getAuthors() + "</td>");
 					if (journalCBSelected) fw.write("<td>" + pub.getJournal() + "</td>");
@@ -187,7 +192,8 @@ public class Report {
 		boolean journalCBSelected = checkboxes.get(2).getSelection();
 		boolean yearCBSelected = checkboxes.get(3).getSelection();
 		boolean citationCountCBSelected = checkboxes.get(4).getSelection();
-		
+		boolean displayDepartmentCBSelected = checkboxes.get(5).getSelection();
+
 		try {
 			fw = new FileWriter(outputFile);
 			fw.write("Google Scholar Publication Report");
@@ -199,6 +205,8 @@ public class Report {
 			
 			for (Professor prof : professors) {
 				fw.write(prof.getFullName());
+				fw.write("\n");
+				if (displayDepartmentCBSelected) fw.write(prof.getDepartment());
 				fw.write("\n");
 				if (nameCBSelected) {fw.write("Publication"); fw.write(",");}
 				if (authorsCBSelected) {fw.write("Authors"); fw.write(",");}
@@ -254,7 +262,8 @@ public class Report {
 		boolean journalCBSelected = checkboxes.get(2).getSelection();
 		boolean yearCBSelected = checkboxes.get(3).getSelection();
 		boolean citationCountCBSelected = checkboxes.get(4).getSelection();
-		
+		boolean displayDepartmentCBSelected = checkboxes.get(5).getSelection();
+
 		try {
 			fw = new FileWriter(outputFile);
 			fw.write("Google Scholar Publication Report");
@@ -265,6 +274,7 @@ public class Report {
 			fw.write("\n\n");
 			
 			fw.write("Professor"); fw.write(",");
+			if (displayDepartmentCBSelected) {fw.write("Department"); fw.write(",");}
 			if (nameCBSelected) {fw.write("Publication"); fw.write(",");}
 			if (authorsCBSelected) {fw.write("Authors"); fw.write(",");}
 			if (journalCBSelected) {fw.write("Journal"); fw.write(",");}
@@ -275,6 +285,7 @@ public class Report {
 			for (Professor prof : professors) {
 				for (Publication pub : prof.getPublications()) {
 					fw.write(prof.getFullName()); fw.write(",");
+					if (displayDepartmentCBSelected) {fw.write(prof.getDepartment()); fw.write(",");}
 					if (nameCBSelected) {fw.write(pub.getTitle().replace(",", ";")); fw.write(",");}
 					if (authorsCBSelected) {fw.write(pub.getAuthors().replace(",", " &")); fw.write(",");}
 					if (journalCBSelected) {fw.write(pub.getJournal().replace(",", "---")); fw.write(",");}

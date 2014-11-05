@@ -79,6 +79,11 @@ public class GUI {
 						}
 						for (Thread t : threads) {
 							t.start();
+							try {
+								Thread.sleep(50);
+							} catch (InterruptedException e) {
+								e.printStackTrace();
+							}
 						}
 						
 						// Check if all threads are terminated. If not, wait 2000ms before checking again.
@@ -153,6 +158,12 @@ public class GUI {
 		combineCB.setBounds(226, 202, 137, 16);
 		combineCB.setText("Combine Professors");
 		
+		Button displayDepartmentCB = new Button(frame, SWT.CHECK);
+		displayDepartmentCB.setSelection(true);
+		displayDepartmentCB.setText("Display Department");
+		displayDepartmentCB.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
+		displayDepartmentCB.setBounds(226, 224, 137, 16);
+		
 		Label professorListLabel = new Label(frame, SWT.NONE);
 		professorListLabel.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
 		professorListLabel.setAlignment(SWT.CENTER);
@@ -168,11 +179,6 @@ public class GUI {
 		Button nameCB = new Button(frame, SWT.CHECK);
 		nameCB.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
 		nameCB.setSelection(true);
-		nameCB.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-			}
-		});
 		nameCB.setBounds(226, 59, 172, 16);
 		nameCB.setText("Publication Name");
 		
@@ -216,6 +222,7 @@ public class GUI {
 		checkboxes.add(journalCB);
 		checkboxes.add(yearCB);
 		checkboxes.add(citationCountCB);
+		checkboxes.add(displayDepartmentCB);
 		
 		Label label_2 = new Label(frame, SWT.SEPARATOR | SWT.HORIZONTAL);
 		label_2.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));

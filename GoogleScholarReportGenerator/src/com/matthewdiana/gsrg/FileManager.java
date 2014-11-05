@@ -11,14 +11,22 @@ public class FileManager {
 		ArrayList<Professor> professors = new ArrayList<>();
 		BufferedReader input = new BufferedReader(new FileReader("urls.txt"));
 		String line = input.readLine();
+		String currentDepartment = "";
 		while (line != null) {
 			
-			// If line is a comment or empty, skip it.
+			// If line starts with # (comment) or empty, skip it.
 			if (line.startsWith("#") || line.equals("")) {
 				line = input.readLine();
 				continue;
 			}
-						
+			
+			// If line starts with $, change department string
+			if (line.startsWith("=")) {
+				currentDepartment = line.substring(line.indexOf("=")+1, line.length()).trim();
+				line = input.readLine();
+				continue;
+			}
+									
 			int endOfFirstName = line.indexOf(" ") + 1;
 			int endOfLastName = line.lastIndexOf(" ") + 1;
 			
@@ -26,7 +34,7 @@ public class FileManager {
 			String lastName = line.substring(endOfFirstName, endOfLastName).trim();
 			String url = line.substring(endOfLastName, line.length()).trim();
 			
-			professors.add(new Professor(firstName, lastName, url));
+			professors.add(new Professor(firstName, lastName, currentDepartment, url));
 			
 			line = input.readLine();
 		}
