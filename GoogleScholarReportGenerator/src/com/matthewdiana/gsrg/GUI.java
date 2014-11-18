@@ -242,7 +242,7 @@ public class GUI {
 				generateButton.setEnabled(true);
 			}
 		});
-		format.setItems(new String[] {"HTML", "CSV"});
+		format.setItems(new String[] {"HTML", "CSV", "BU Publications Webpage"});
 		format.setText("Select Report Format...");
 		format.setEditable(false);
 		format.setBounds(226, 290, 172, 21);
@@ -252,18 +252,18 @@ public class GUI {
 			public void mouseDown(MouseEvent e) {
 				Report report = new Report(professors, checkboxes);
 				try {
-					if (combineCB.getSelection()) {
-						if (format.getText().equals("HTML")) {
+					if (format.getText().equals("HTML")) {
+						if (combineCB.getSelection())
 							report.generateHTMLReportCombined();
-						} else if (format.getText().equals("CSV")) {
-							report.generateCVSReportCombined();
-						}
-					} else {
-						if (format.getText().equals("HTML")) {
+						else
 							report.generateHTMLReport();
-						} else if (format.getText().equals("CSV")) {
+					} else if (format.getText().equals("CSV")) {
+						if (combineCB.getSelection())
+							report.generateCSVReportCombined();
+						else
 							report.generateCSVReport();
-						}
+					} else {
+						report.generateBUPublicationsHTML();
 					}
 
 				} catch (IOException e1) {
