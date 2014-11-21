@@ -127,7 +127,7 @@ public class GUI {
 	 */
 	protected void createContents() {
 		frame = new Shell();
-		frame.setSize(424, 392);
+		frame.setSize(424, 500);
 		frame.setText("Google Scholar Report Generator");
 		
 		Label titleLabel = new Label(frame, SWT.NONE);
@@ -246,6 +246,10 @@ public class GUI {
 		format.setText("Select Report Format...");
 		format.setEditable(false);
 		format.setBounds(226, 290, 172, 21);
+		
+		Label label_3 = new Label(frame, SWT.SEPARATOR | SWT.HORIZONTAL);
+		label_3.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
+		label_3.setBounds(10, 358, 388, 2);
 		
 		generateButton.addMouseListener(new MouseAdapter() {
 			@Override

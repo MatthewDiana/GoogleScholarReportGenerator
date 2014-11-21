@@ -86,7 +86,7 @@ public class Professor implements Runnable {
 			try {
 				doc = Jsoup.connect(googleScholarURL + "&pagesize=100&view_op=list_works&cstart=" + pageCounter).get();
 			} catch (IOException e1) {
-				System.out.println("Unable to connect to Google Scholar; check your internet connection.");
+				System.out.println("Unable to connect to Google Scholar page of: " + fullName);
 				//System.exit(0);
 				break;
 			}

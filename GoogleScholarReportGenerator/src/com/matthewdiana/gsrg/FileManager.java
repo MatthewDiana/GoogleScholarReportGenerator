@@ -20,7 +20,7 @@ public class FileManager {
 				continue;
 			}
 			
-			// If line starts with $, change department string
+			// If line starts with =, change the current department.
 			if (line.startsWith("=")) {
 				currentDepartment = line.substring(line.indexOf("=")+1, line.length()).trim();
 				line = input.readLine();
@@ -41,5 +41,4 @@ public class FileManager {
 		input.close();
 		return professors;
 	}
-	
 }
