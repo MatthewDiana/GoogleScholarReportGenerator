@@ -8,39 +8,61 @@
 
 = Bioengineering
 Guy German http://scholar.google.com/citations?user=PFa8F_oAAAAJ
+Sha Jin http://scholar.google.com/citations?user=4EPE1s4AAAAJ
+Gretchen Mahler http://scholar.google.com/citations?user=3pXs4yAAAAAJ
 Hiroki Sayama http://scholar.google.com/citations?user=IwDCodEAAAAJ
 
 = Computer Science
-Nael Abu-Ghazaleh http://scholar.google.com/citations?user=AN3f7iAAAAAJ
+#Nael Abu-Ghazaleh http://scholar.google.com/citations?user=AN3f7iAAAAAJ
 Kanad Ghose http://scholar.google.com/citations?user=pPtLOX4AAAAJ
 Kartik Gopalan http://scholar.google.com/citations?user=gSnisPkAAAAJ
 Madhusudhan Govindaraju http://scholar.google.com/citations?user=cuA3CkgAAAAJ
+Kyoung-Don Kang http://scholar.google.com/citations?user=5Qrq3p0AAAAJ
 Yu-David Liu http://scholar.google.com/citations?user=_KCqeIEAAAAJ
 Yao Liu http://scholar.google.com/citations?user=Ej57xEgAAAAJ
 Weiyi Meng http://scholar.google.com/citations?user=C-wDOskAAAAJ
 Timothy Miller http://scholar.google.com/citations?user=NgEPEgEAAAAJ
 Dmitri Ponomarev http://scholar.google.com/citations?user=zr9OzAUAAAAJ
+Guanhua Yan http://scholar.google.com/citations?user=6rPWxsgAAAAJ
 Lijun Yin http://scholar.google.com/citations?user=PYV9NvYAAAAJ
 Lei Yu http://scholar.google.com/citations?user=bRCoY7EAAAAJ
-Ting Zhu http://scholar.google.com/citations?user=BXp6PIIAAAAJ
+#Ting Zhu http://scholar.google.com/citations?user=BXp6PIIAAAAJ
 
 = Electrical & Computer Engineering
+Aaron Carpenter http://scholar.google.com/citations?user=5xI79jkAAAAJ
 Yu Chen http://scholar.google.com/citations?user=fs2LVqkAAAAJ
 Seokheun Choi http://scholar.google.com/citations?user=2H01tqsAAAAJ
 Scott Craver http://scholar.google.com/citations?user=s2Jfd_EAAAAJ
 Tara Dhakal http://scholar.google.com/citations?user=nIilxGUAAAAJ
 Mark Fowler http://scholar.google.com/citations?user=M4Gtz_MAAAAJ
+Jessica Fridrich http://scholar.google.com/citations?user=_opdaM8AAAAJ
+Linke Guo http://scholar.google.com/citations?user=tIxpkQoAAAAJ
 Zhanpeng Jin http://scholar.google.com/citations?user=4EPE1s4AAAAJ
+Matthias Kirchner http://scholar.google.com/citations?user=YEwl6McAAAAJ
 David Klotzkin http://scholar.google.com/citations?user=PmoXm6UAAAAJ
 Xiaohua Li http://scholar.google.com/citations?user=BWCXlIcAAAAJ
+Doug Summerville http://scholar.google.com/citations?user=EekvxIcAAAAJ
+Stephen Zahorian http://scholar.google.com/citations?user=_4zuk6MAAAAJ
+Ziang Zhang http://scholar.google.com/citations?user=MWFKV48AAAAJ
 Ning Zhou http://scholar.google.com/citations?user=Wu2eCMUAAAAJ
 
 = Mechanical Engineering
+Pong-Yu Huang http://scholar.google.com/citations?user=6GEXkiEAAAAJ
+Changhong Ke http://scholar.google.com/citations?user=r8ZhcAkAAAAJ
 Ron Miles http://scholar.google.com/citations?user=O31K47YAAAAJ
+Seungbae Park http://scholar.google.com/citations?user=lThSBOAAAAAJ
+James Pitarresi http://scholar.google.com/citations?user=u8kfmZQAAAAJ
 Bahgat Sammakia http://scholar.google.com/citations?user=F-xcn0MAAAAJ
 Quang Su http://scholar.google.com/citations?user=OFfdxoQAAAAJ
+Sherry Towfighian http://scholar.google.com/citations?user=OLeUKlUAAAAJ
+Ryan Willing http://scholar.google.com/citations?user=VPciUosAAAAJ
+Xin Yong http://scholar.google.com/citations?user=IcVTSosAAAAJ
 Mohammad Younis http://scholar.google.com/citations?user=NIChMFQAAAAJ
 Guangwen Zhou http://scholar.google.com/citations?user=aqHhYcwAAAAJ
 
 = Industrial Engineering
+Peter Borgesen http://scholar.google.com/citations?user=RTJPO_gAAAAJ
 Chun-An Chou http://scholar.google.com/citations?user=xDuEgX4AAAAJ
+SungHoon Chung http://scholar.google.com/citations?user=wWNoVCcAAAAJ
+Prahalada Rao http://scholar.google.com/citations?user=UqQzv80AAAAJ
+Hasim Sabounchi http://scholar.google.com/citations?user=UYh79PkAAAAJ

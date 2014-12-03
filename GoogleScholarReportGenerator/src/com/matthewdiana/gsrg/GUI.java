@@ -144,12 +144,12 @@ public class GUI {
 		generateButton.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
 		
 		generateButton.setEnabled(false);
-		generateButton.setBounds(10, 317, 388, 35);
+		generateButton.setBounds(10, 381, 388, 35);
 		generateButton.setText("GENERATE");
 		
 		list = new List(frame, SWT.BORDER | SWT.V_SCROLL);
 		list.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
-		list.setBounds(10, 56, 200, 255);
+		list.setBounds(10, 56, 200, 319);
 		list.add("Scraping Google Scholar...");
 		list.add("This could take a minute...");
 		
@@ -226,13 +226,13 @@ public class GUI {
 		
 		Label label_2 = new Label(frame, SWT.SEPARATOR | SWT.HORIZONTAL);
 		label_2.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
-		label_2.setBounds(226, 257, 172, 2);
+		label_2.setBounds(226, 321, 172, 2);
 		
 		Label formatLabel = new Label(frame, SWT.NONE);
 		formatLabel.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
 		formatLabel.setText("Format");
 		formatLabel.setAlignment(SWT.CENTER);
-		formatLabel.setBounds(226, 265, 172, 19);
+		formatLabel.setBounds(226, 329, 172, 19);
 		
 		format = new CCombo(frame, SWT.BORDER);
 		format.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
@@ -245,11 +245,11 @@ public class GUI {
 		format.setItems(new String[] {"HTML", "CSV", "BU Publications Webpage"});
 		format.setText("Select Report Format...");
 		format.setEditable(false);
-		format.setBounds(226, 290, 172, 21);
+		format.setBounds(226, 354, 172, 21);
 		
 		Label label_3 = new Label(frame, SWT.SEPARATOR | SWT.HORIZONTAL);
 		label_3.setFont(SWTResourceManager.getFont("Trebuchet MS", 9, SWT.NORMAL));
-		label_3.setBounds(10, 358, 388, 2);
+		label_3.setBounds(10, 422, 388, 2);
 		
 		generateButton.addMouseListener(new MouseAdapter() {
 			@Override
