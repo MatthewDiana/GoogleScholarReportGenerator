@@ -15,10 +15,18 @@ public class Report {
 
 	private ArrayList<Professor> professors;
 	private ArrayList<Button> checkboxes;
+	private String institution;
 	
 	public Report(ArrayList<Professor> professors, ArrayList<Button> checkboxes) {
 		this.professors = professors;
 		this.checkboxes = checkboxes;
+		
+		try {
+			this.institution = FileManager.fetchInstitution();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Unable to fetch institution from file.");
+		}
 	}
 	
 	public void generateHTMLReport() throws IOException {
@@ -49,7 +57,10 @@ public class Report {
 			fw.write("<head><title>Google Scholar Publication Report</title><script src=\"sorttable.js\"></script></head>");
 			fw.write("<body><font face=\"calibri\"><center>");
 			fw.write("<h1><b><u>Google Scholar Publication Report</u></b></h1>");
-			fw.write("<h3>Generated for Binghamton University - " + dateFormat.format(date) + " <br />Fetched " + publicationCount + " publications written by " + professorCount + " professors</h3>");
+			fw.write("<h3>");
+			if (institution != null)
+				fw.write("Generated for " + institution + " - ");
+			fw.write(dateFormat.format(date) + " <br />Fetched " + publicationCount + " publications written by " + professorCount + " professors</h3>");
 			fw.write("<hr width=\"50%\" />");
 			for (Professor prof : professors) {
 				
@@ -126,7 +137,10 @@ public class Report {
 			fw.write("<head><title>Google Scholar Publication Report</title><script src=\"sorttable.js\"></script></head>");
 			fw.write("<body><font face=\"calibri\"><center>");
 			fw.write("<h1><b><u>Google Scholar Publication Report</u></b></h1>");
-			fw.write("<h3>Generated for Binghamton University - " + dateFormat.format(date) + " <br />Fetched " + publicationCount + " publications written by " + professorCount + " professors</h3>");
+			fw.write("<h3>");
+			if (institution != null)
+				fw.write("Generated for " + institution + " - ");
+			fw.write(dateFormat.format(date) + " <br />Fetched " + publicationCount + " publications written by " + professorCount + " professors</h3>");
 			fw.write("<hr width=\"50%\" /> <br />");
 			fw.write("<table class=\"sortable\" border=\"3\" width=\"95%\">");
 
@@ -198,7 +212,11 @@ public class Report {
 			fw = new FileWriter(outputFile);
 			fw.write("Google Scholar Publication Report");
 			fw.write("\n");
-			fw.write("Generated for Binghamton University - " + dateFormat.format(date));
+			if (institution != null)
+				fw.write("Generated for " + institution + " - " + dateFormat.format(date));
+			else
+				fw.write(dateFormat.format(date));
+			fw.write(dateFormat.format(date));
 			fw.write("\n");
 			fw.write("Fetched " + publicationCount + " publications written by " + professorCount + " professors");
 			fw.write("\n\n");
@@ -268,7 +286,11 @@ public class Report {
 			fw = new FileWriter(outputFile);
 			fw.write("Google Scholar Publication Report");
 			fw.write("\n");
-			fw.write("Generated for Binghamton University - " + dateFormat.format(date));
+			if (institution != null)
+				fw.write("Generated for " + institution + " - " + dateFormat.format(date));
+			else
+				fw.write(dateFormat.format(date));
+			
 			fw.write("\n");
 			fw.write("Fetched " + publicationCount + " publications written by " + professorCount + " professors");
 			fw.write("\n\n");

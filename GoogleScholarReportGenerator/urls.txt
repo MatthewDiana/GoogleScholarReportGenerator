@@ -6,6 +6,8 @@
 #
 # *** START LIST BELOW ***
 
+$institution=test
+
 = Bioengineering
 Guy German http://scholar.google.com/citations?user=PFa8F_oAAAAJ
 Sha Jin http://scholar.google.com/citations?user=4EPE1s4AAAAJ
