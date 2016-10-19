@@ -54,7 +54,7 @@ public class Report {
 		try {
 			fw = new FileWriter(outputFile);
 			fw.write("<html>");
-			fw.write("<head><title>Google Scholar Publication Report</title><script src=\"sorttable.js\"></script></head>");
+			fw.write("<head><title>Google Scholar Publication Report</title><script src=\"res/sorttable.js\"></script></head>");
 			fw.write("<body><font face=\"calibri\"><center>");
 			fw.write("<h1><b><u>Google Scholar Publication Report</u></b></h1>");
 			fw.write("<h3>");
@@ -134,7 +134,7 @@ public class Report {
 		try {
 			fw = new FileWriter(outputFile);
 			fw.write("<html>");
-			fw.write("<head><title>Google Scholar Publication Report</title><script src=\"sorttable.js\"></script></head>");
+			fw.write("<head><title>Google Scholar Publication Report</title><script src=\"res/sorttable.js\"></script></head>");
 			fw.write("<body><font face=\"calibri\"><center>");
 			fw.write("<h1><b><u>Google Scholar Publication Report</u></b></h1>");
 			fw.write("<h3>");
